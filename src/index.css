@@ -1,4 +1,4 @@
-/* Brand fonts loaded via index.html: Geist */
+/* Brand fonts loaded via index.html: Arvo (hero) + Open Sans (body) */
 
 @tailwind base;
 @tailwind components;
@@ -121,11 +121,18 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Geist', system-ui, sans-serif;
+    font-family: 'Open Sans', system-ui, sans-serif;
+    line-height: 1.5; /* 6pt gap over pt size as per brand guidelines */
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Geist', system-ui, sans-serif;
+  h1 {
+    font-family: 'Arvo', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', system-ui, sans-serif;
     font-weight: 600;
   }
 }

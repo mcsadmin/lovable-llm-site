@@ -68,8 +68,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Geist", "system-ui", "sans-serif"],
-        display: ["Geist", "system-ui", "sans-serif"],
+        sans: ["Open Sans", "system-ui", "sans-serif"],
+        display: ["Arvo", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
