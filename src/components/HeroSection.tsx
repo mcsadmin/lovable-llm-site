@@ -36,7 +36,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ll-lime-soft text-foreground text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ll-lime-15 text-foreground text-sm font-medium mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               Now accepting founding members
@@ -97,7 +97,7 @@ export const HeroSection = () => {
           >
             <div className="relative aspect-square max-w-lg mx-auto">
               {/* Decorative circles */}
-              <div className="absolute inset-0 rounded-full border-2 border-ll-lime-soft animate-pulse-soft" />
+              <div className="absolute inset-0 rounded-full border-2 border-ll-lime-50 animate-pulse-soft" />
               <div className="absolute inset-8 rounded-full border-2 border-secondary" />
               <div className="absolute inset-16 rounded-full bg-gradient-hero shadow-ll-lg" />
               
