@@ -16,7 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent/10 hover:text-accent-foreground rounded-lg",
         link: "text-primary underline-offset-4 hover:underline",
         // Local Loop brand buttons
-        hero: "bg-primary text-primary-foreground hover:bg-ll-purple-dark rounded-full shadow-ll-md hover:shadow-ll-lg transition-all duration-300",
+        hero: "bg-primary text-primary-foreground hover:bg-ll-purple-80 rounded-full shadow-ll-md hover:shadow-ll-lg transition-all duration-300",
         "hero-outline": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground rounded-full transition-all duration-300",
         lime: "bg-accent text-accent-foreground hover:brightness-105 rounded-full shadow-lime transition-all duration-300",
         "lime-outline": "border-2 border-accent bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground rounded-full transition-all duration-300",

@@ -59,12 +59,33 @@ export default {
         },
         // Local Loop brand colors
         ll: {
+          // Purple - flagship
           purple: "hsl(var(--ll-purple))",
-          "purple-dark": "hsl(var(--ll-purple-dark))",
+          "purple-80": "hsl(var(--ll-purple-80))",
+          "purple-50": "hsl(var(--ll-purple-50))",
+          "purple-30": "hsl(var(--ll-purple-30))",
+          // Green/Lime - energy
           lime: "hsl(var(--ll-lime))",
-          "lime-soft": "hsl(var(--ll-lime-soft))",
-          "gray-light": "hsl(var(--ll-gray-light))",
-          gray: "hsl(var(--ll-gray))",
+          "lime-50": "hsl(var(--ll-lime-50))",
+          "lime-15": "hsl(var(--ll-lime-15))",
+          // Pink - alternate
+          pink: "hsl(var(--ll-pink))",
+          "pink-80": "hsl(var(--ll-pink-80))",
+          "pink-50": "hsl(var(--ll-pink-50))",
+          "pink-30": "hsl(var(--ll-pink-30))",
+          // Blue - corporate
+          "blue-dark": "hsl(var(--ll-blue-dark))",
+          cyan: "hsl(var(--ll-cyan))",
+          "cyan-50": "hsl(var(--ll-cyan-50))",
+          "cyan-30": "hsl(var(--ll-cyan-30))",
+          // Orange - playful
+          orange: "hsl(var(--ll-orange))",
+          "orange-50": "hsl(var(--ll-orange-50))",
+          "orange-15": "hsl(var(--ll-orange-15))",
+          // Backgrounds
+          "bg-cream": "hsl(var(--ll-bg-cream))",
+          "bg-cream-light": "hsl(var(--ll-bg-cream-light))",
+          "bg-gray": "hsl(var(--ll-bg-gray))",
         },
       },
       fontFamily: {
