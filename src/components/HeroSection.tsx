@@ -31,7 +31,7 @@ export const HeroSection = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-ll-lime-15 text-foreground text-sm font-medium mb-6 whitespace-nowrap"
             >
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span>Data Membership is free. Join now.</span>
+              <span>Data Membership is free. <a href="https://demo.localloop-merseyside.co.uk/signup" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">Join now.</a></span>
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
