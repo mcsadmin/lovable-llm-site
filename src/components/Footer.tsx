@@ -1,5 +1,5 @@
 import { Linkedin, Mail, MapPin } from "lucide-react";
-import logoLime from "@/assets/logo-lime.png";
+import logoGreen from "@/assets/logo-green-merseyside.svg";
 
 const PLATFORM_URL = "https://demo.localloop-merseyside.co.uk";
 
@@ -32,7 +32,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <img src={logoLime} alt="Local Loop" className="h-10 w-auto mb-4" />
+            <img src={logoGreen} alt="Local Loop" className="h-10 w-auto mb-4" />
             <p className="text-primary-foreground/80 max-w-sm mb-6">
               Building a trusted payment network for local businesses across Merseyside. 
               Get paid faster, strengthen your community.
