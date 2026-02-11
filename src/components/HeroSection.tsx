@@ -37,6 +37,7 @@ export const HeroSection = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-ll-lime-15 text-foreground text-sm font-medium mb-6 whitespace-nowrap">
+              <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               <span>Data Membership is free. Join now.</span>
             </motion.div>
 
