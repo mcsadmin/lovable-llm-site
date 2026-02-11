@@ -43,13 +43,13 @@ export const HeroSection = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Local Loop solves the{" "}
-              <span className="text-gradient-primary">payment gridlock.</span>
+              Get paid on time.{" "}
+              <span className="text-gradient-primary"></span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">The Founding Members invite SMEs across Merseyside invited to join the UK's first Clearing Club.  Simply and safely share invoice data. Clever tech gets everyone paid.
-
-
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">The Founding Members invite SMEs across Merseyside to join 
+the UK's first Clearing Club.  
+Simply and safely share invoice data. Clever tech gets everyone paid.
             </p>
 
             {/* Benefits List */}
