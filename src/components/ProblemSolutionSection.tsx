@@ -39,7 +39,7 @@ const solutions = [
 
 export const ProblemSolutionSection = () => {
   return (
-    <section className="py-20 md:py-28 bg-muted/50">
+    <section id="problem" className="py-20 md:py-28 bg-muted/50">
       <div className="container-site">
         {/* Section Header */}
         <motion.div
