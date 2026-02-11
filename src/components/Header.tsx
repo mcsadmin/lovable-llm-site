@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoPurple from "@/assets/logo-purple.png";
+import logoPurple from "@/assets/logo-purple-merseyside.png";
 
 const PLATFORM_URL = "https://demo.localloop-merseyside.co.uk";
 
