@@ -43,8 +43,8 @@ export const HeroSection = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Local Loop which gets you{" "}
-              <span className="text-gradient-primary">paid on time</span>
+              Local Loop solves the{" "}
+              <span className="text-gradient-primary">payment gridlock</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
