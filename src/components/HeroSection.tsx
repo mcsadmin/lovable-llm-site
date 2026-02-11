@@ -36,8 +36,8 @@ export const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-ll-lime-15 text-foreground text-sm font-medium mb-6 whitespace-nowrap">
-              Data Membership is free. Join now.
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-ll-lime-15 text-foreground text-sm font-medium mb-6 whitespace-nowrap">
+              <span>Data Membership is free. Join now.</span>
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
