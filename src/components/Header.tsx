@@ -27,12 +27,15 @@ export const Header = () => {
 
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const id = href.replace("#", "");
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
     setMobileMenuOpen(false);
+    const id = href.replace("#", "");
+    // Delay scroll to allow mobile menu close animation to complete
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300);
   };
 
   return (
