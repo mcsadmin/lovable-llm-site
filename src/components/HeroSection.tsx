@@ -43,7 +43,7 @@ export const HeroSection = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              The Clearing Club which gets you{" "}
+              Local Loop which gets you{" "}
               <span className="text-gradient-primary">paid on time</span>
             </h1>
 
