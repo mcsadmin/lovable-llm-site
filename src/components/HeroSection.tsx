@@ -47,8 +47,8 @@ export const HeroSection = () => {
               <span className="text-gradient-primary">Every time.</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">SMEs across Merseyside are invited to join the UK's first Clearing Club alongside the founding Members. You share invoice data safely and simply. Clever tech gets everyone paid.
-
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">The Founding Members invite SMEs across Merseyside are invited to join the UK's first Clearing Club.
+Simply and safely share invoice data. Clever tech gets everyone paid.
 
             </p>
 
