@@ -44,7 +44,7 @@ export const HeroSection = () => {
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Get paid on time.{" "}
-              <span className="text-gradient-primary">Every time.</span>
+              <span className="text-gradient-primary"></span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">The Founding Members invite SMEs across Merseyside are invited to join the UK's first Clearing Club.
