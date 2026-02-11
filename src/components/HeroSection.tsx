@@ -39,7 +39,7 @@ export const HeroSection = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ll-lime-15 text-foreground text-sm font-medium mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              Now accepting founding members
+              Data Membership is free. Join now.
             </motion.div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
