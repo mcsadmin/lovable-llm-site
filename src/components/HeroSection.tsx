@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Download, CheckCircle } from "lucide-react";
+import { ArrowRight, Download, CheckCircle, Play } from "lucide-react";
+import { VideoDialog } from "@/components/VideoDialog";
 import { Button } from "@/components/ui/button";
 import logoIcon from "@/assets/logo-icon.png";
 
@@ -78,6 +79,7 @@ export const HeroSection = () => {
                   Free Guide
                 </a>
               </Button>
+              <VideoDialog videoSrc="/videos/explainer.mp4" />
             </motion.div>
           </motion.div>
 
