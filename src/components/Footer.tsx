@@ -4,7 +4,7 @@ import logoGreen from "@/assets/logo-green-merseyside.svg";
 const PLATFORM_URL = "https://demo.localloop-merseyside.co.uk";
 
 const socialLinks = [
-  { href: "https://linkedin.com/company/localloop", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://www.linkedin.com/company/localloop-merseyside/", icon: Linkedin, label: "LinkedIn" },
   { href: "mailto:hello@localloop.io", icon: Mail, label: "Email" },
 ];
 
