@@ -48,8 +48,7 @@ export const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Local Loop is a trusted payment network for SMEs across Merseyside. 
-              Join a community of businesses committed to fair payment practices.
+              SMEs across Merseyside, are invited to join the UKs first Clearing Club,
             </p>
 
             {/* Benefits List */}
