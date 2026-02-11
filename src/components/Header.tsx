@@ -51,7 +51,7 @@ export const Header = () => {
             onClick={(e) => handleAnchorClick(e, "#hero")}
             className="flex items-center"
           >
-            <img src={logoPurple} alt="Local Loop" className="h-16 md:h-20 w-auto" />
+            <img src={logoPurple} alt="Local Loop" className="h-24 md:h-[7.5rem] w-auto" />
           </a>
 
           {/* Desktop Navigation */}
