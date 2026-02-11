@@ -51,8 +51,8 @@ export const ProblemSolutionSection = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">The Payment Gridlock Problem
 
           </h2>
-          <p className="text-lg text-muted-foreground">"I can't pay you, because I've not been paid" - we've all heard it. Local Loop members are building a better way.
-
+          <p className="text-lg text-muted-foreground">"I can't pay you, because I've not been paid" - we've all heard it. 
+Local Loop members are building a better way.
 
           </p>
         </motion.div>
