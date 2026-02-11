@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Play, CheckCircle } from "lucide-react";
+import { ArrowRight, Download, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoIcon from "@/assets/logo-icon.png";
 
@@ -11,7 +11,7 @@ const benefits = [
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-subtle" />
       <div className="absolute top-1/4 right-0 w-1/2 h-1/2 opacity-5">
@@ -76,14 +76,16 @@ export const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <Button variant="hero" size="xl" asChild>
-                <a href="https://platform.localloop.io/signup" target="_blank" rel="noopener noreferrer">
+                <a href="https://demo.localloop-merseyside.co.uk/signup" target="_blank" rel="noopener noreferrer">
                   Join Local Loop
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="hero-outline" size="xl">
-                <Play className="h-5 w-5 mr-2" />
-                Watch Explainer
+              <Button variant="hero-outline" size="xl" asChild>
+                <a href="#guide">
+                  <Download className="h-5 w-5 mr-2" />
+                  Free Guide
+                </a>
               </Button>
             </motion.div>
           </motion.div>

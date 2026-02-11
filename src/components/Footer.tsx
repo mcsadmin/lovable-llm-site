@@ -1,30 +1,33 @@
-import { Link } from "react-router-dom";
-import { Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react";
+import { Linkedin, Mail, MapPin } from "lucide-react";
 import logoLime from "@/assets/logo-lime.png";
 
-const footerLinks = {
-  navigation: [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/founding-members", label: "Founding Members" },
-    { href: "/news", label: "News" },
-    { href: "/contact", label: "Contact" },
-  ],
-  legal: [
-    { href: "/privacy", label: "Privacy Policy" },
-    { href: "/terms", label: "Terms of Service" },
-  ],
-};
+const PLATFORM_URL = "https://demo.localloop-merseyside.co.uk";
 
 const socialLinks = [
   { href: "https://linkedin.com/company/localloop", icon: Linkedin, label: "LinkedIn" },
-  { href: "https://twitter.com/localloop", icon: Twitter, label: "Twitter" },
   { href: "mailto:hello@localloop.io", icon: Mail, label: "Email" },
 ];
 
+const sectionLinks = [
+  { href: "#hero", label: "Home" },
+  { href: "#problem", label: "The Problem" },
+  { href: "#founding-members", label: "Founding Members" },
+  { href: "#guide", label: "Free Guide" },
+  { href: "#contact", label: "Contact" },
+];
+
 export const Footer = () => {
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const id = href.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <footer className="bg-gradient-hero text-primary-foreground">
+    <footer id="contact" className="bg-gradient-hero text-primary-foreground">
       <div className="container-site py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
@@ -55,14 +58,15 @@ export const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-lg mb-4">Navigation</h4>
             <ul className="space-y-3">
-              {footerLinks.navigation.map((link) => (
+              {sectionLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-primary-foreground/80 hover:text-accent transition-colors"
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleAnchorClick(e, link.href)}
+                    className="text-primary-foreground/80 hover:text-accent transition-colors cursor-pointer"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -85,17 +89,6 @@ export const Footer = () => {
                   <span>hello@localloop.io</span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://wa.me/447000000000"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors"
-                >
-                  <Phone className="h-5 w-5" />
-                  <span>WhatsApp</span>
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -105,17 +98,9 @@ export const Footer = () => {
           <p className="text-primary-foreground/60 text-sm">
             © {new Date().getFullYear()} Local Loop. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            {footerLinks.legal.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="text-sm text-primary-foreground/60 hover:text-accent transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+          <p className="text-sm text-primary-foreground/60">
+            Liverpool, Merseyside
+          </p>
         </div>
       </div>
     </footer>

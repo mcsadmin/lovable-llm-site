@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Building2, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 // Placeholder founding members - these would come from a CMS in production
@@ -17,7 +16,7 @@ const foundingMembers = [
 
 export const FoundingMembersSection = () => {
   return (
-    <section className="py-20 md:py-28 bg-gradient-hero text-primary-foreground overflow-hidden">
+    <section id="founding-members" className="py-20 md:py-28 bg-gradient-hero text-primary-foreground overflow-hidden">
       <div className="container-site">
         {/* Header */}
         <motion.div
@@ -62,10 +61,10 @@ export const FoundingMembersSection = () => {
           className="text-center"
         >
           <Button variant="lime" size="lg" asChild>
-            <Link to="/founding-members">
-              View All Members
+            <a href="https://demo.localloop-merseyside.co.uk/signup" target="_blank" rel="noopener noreferrer">
+              Become a Founding Member
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </a>
           </Button>
         </motion.div>
       </div>
