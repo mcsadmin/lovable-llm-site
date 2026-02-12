@@ -1,17 +1,20 @@
 import { motion } from "framer-motion";
-import { Building2, ArrowRight } from "lucide-react";
+import { Building2, ArrowRight, Award, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+
+type MemberType = "founder" | "partner" | "both";
 
 // Placeholder founding members - these would come from a CMS in production
-const foundingMembers = [
-  { id: 1, name: "Baltic Creative", industry: "Creative Hub" },
-  { id: 2, name: "Liverpool BID", industry: "Business Improvement" },
-  { id: 3, name: "Make Liverpool", industry: "Manufacturing" },
-  { id: 4, name: "DoES Liverpool", industry: "Maker Space" },
-  { id: 5, name: "Agent Academy", industry: "Education" },
-  { id: 6, name: "Homebaked", industry: "Food & Drink" },
-  { id: 7, name: "Kazimier Garden", industry: "Hospitality" },
-  { id: 8, name: "Sound City", industry: "Events" },
+const foundingMembers: { id: number; name: string; industry: string; type: MemberType }[] = [
+  { id: 1, name: "Baltic Creative", industry: "Creative Hub", type: "both" },
+  { id: 2, name: "Liverpool BID", industry: "Business Improvement", type: "founder" },
+  { id: 3, name: "Make Liverpool", industry: "Manufacturing", type: "founder" },
+  { id: 4, name: "DoES Liverpool", industry: "Maker Space", type: "both" },
+  { id: 5, name: "Agent Academy", industry: "Education", type: "partner" },
+  { id: 6, name: "Homebaked", industry: "Food & Drink", type: "founder" },
+  { id: 7, name: "Kazimier Garden", industry: "Hospitality", type: "partner" },
+  { id: 8, name: "Sound City", industry: "Events", type: "founder" },
 ];
 
 export const FoundingMembersSection = () => {
@@ -26,7 +29,7 @@ export const FoundingMembersSection = () => {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Our Founding Members
+            Founding Members &amp; Partners
           </h2>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
             These pioneering local businesses are building a fairer payment ecosystem for Merseyside.
@@ -45,8 +48,22 @@ export const FoundingMembersSection = () => {
                   <div className="w-16 h-16 rounded-xl bg-primary-foreground/20 flex items-center justify-center mx-auto mb-4">
                     <Building2 className="h-8 w-8 text-accent" />
                   </div>
-                  <h3 className="font-semibold text-sm mb-1">{member.name}</h3>
-                  <p className="text-xs text-primary-foreground/60">{member.industry}</p>
+                   <h3 className="font-semibold text-sm mb-1">{member.name}</h3>
+                   <p className="text-xs text-primary-foreground/60 mb-2">{member.industry}</p>
+                   <div className="flex flex-wrap gap-1 justify-center">
+                     {(member.type === "founder" || member.type === "both") && (
+                       <Badge className="bg-accent/20 text-accent border-accent/30 text-[10px] px-1.5 py-0 gap-1">
+                         <Award className="h-3 w-3" />
+                         Founder
+                       </Badge>
+                     )}
+                     {(member.type === "partner" || member.type === "both") && (
+                       <Badge className="bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30 text-[10px] px-1.5 py-0 gap-1">
+                         <Handshake className="h-3 w-3" />
+                         Partner
+                       </Badge>
+                     )}
+                   </div>
                 </div>
               </div>
             ))}
