@@ -30,11 +30,17 @@ export const LeadMagnetSection = () => {
             </div>
 
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Free Guide: Getting Paid on Time
+              Getting Paid on Time
             </h2>
+            <p className="text-lg text-muted-foreground mb-2 max-w-xl mx-auto italic">
+              — and what to do if you're not —
+            </p>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-              Not ready to sign up yet? Download our practical guide with proven strategies 
-              for improving cash flow and getting invoices paid faster.
+              From getting yourself set up, to communicating effectively with your customers, 
+              to problem solving for the tough cases. With expert advice, straightforward examples 
+              and links to resources, this guide will give you the tools, the understanding, and 
+              the mindset to help get you paid on time — and minimise the damage when payments 
+              do come in late.
             </p>
 
             {!isSubmitted ? (
