@@ -10,7 +10,7 @@ const PLATFORM_URL = "https://demo.localloop-merseyside.co.uk";
 const navLinks = [
   { href: "#hero", label: "Home" },
   { href: "#problem", label: "The Problem" },
-  { href: "#founding-members", label: "Founding Members" },
+  { href: "#founding-members", label: "Members & Partners" },
   { href: "#guide", label: "Free Guide" },
   { href: "#contact", label: "Contact" },
 ];
