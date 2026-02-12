@@ -79,7 +79,7 @@ export const FoundingMembersSection = () => {
         >
           <Button variant="lime" size="lg" asChild>
             <a href="https://demo.localloop-merseyside.co.uk/signup" target="_blank" rel="noopener noreferrer">
-              Become a Founding Member
+              Enquire About Founder Membership
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
